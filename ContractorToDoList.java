@@ -56,11 +56,11 @@ public class ContractorToDoList {
 	 * @return ToDo[] with twice the size with the same data
 	 */
 	private ToDo[] growArray (ToDo[] todos) {
-		ToDo[] a = new ToDo[todos.length*2];
+		ToDo[] newArr = new ToDo[todos.length*2];
 		 for (int i = 0; i < count; i++) {
-	            a[i] = todos[i];
+	            newArr[i] = todos[i];
 		 }
-		 return a;
+		 return newArr;
 	}
 	/**
 	 * This method returns a new ToDoIterator
